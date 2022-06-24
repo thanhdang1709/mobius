@@ -20,13 +20,13 @@ class TodoRepository implements ITodokRepository {
   }
 
   @override
-  Future<void> insert(TodoModel book) async {
-    await _db.insert(book.toMap());
+  Future<void> insert(TodoModel todo) async {
+    await _db.insert(todo.toMap());
   }
 
   @override
-  Future<void> update(TodoModel book) async {
-    await _db.update(book.toMap());
+  Future<void> update(TodoModel todo) async {
+    await _db.update(todo.toMap());
   }
 
   @override
